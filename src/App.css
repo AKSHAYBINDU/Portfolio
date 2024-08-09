@@ -1,0 +1,17 @@
+html,
+body {
+  font-size: calc(
+    var(--base-font-size) + var(--scaling-factor) * (100vw - 320px) / 680
+  );
+  scroll-behavior: smooth;
+  font-family: sans-serif;
+}
+
+.scrollbar-hidden::-webkit-scrollbar {
+  display: none;
+}
+
+.scrollbar-hidden {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
