@@ -9,14 +9,15 @@ export default {
     extend: {
       colors: {
         primary: '#8b5cf6',
-        black: '#000000',
-        white: '#ffffff',
+        black: '#03001C',
+        white: '#FFFBF5',
       },
       fontFamily: {
         primary: ['Roboto', 'sans-serif'],
         secondary: ['Anton', 'sans-serif'],
         bodoni: ['"Libre Bodoni"', 'serif'],
         orbitron: [ "Orbitron", 'serif'],
+        alfaslab: [ "Alfa Slab One", 'serif'],
       },
       screens: {
         sm: '640px',
