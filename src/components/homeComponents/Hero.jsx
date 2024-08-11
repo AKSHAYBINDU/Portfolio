@@ -132,13 +132,13 @@ const Hero = () => {
           }}
           className=" flex justify-center items-center text-center "
         >
-          <motion.h1 className=" text-shadow font-secondary text-violet-500 z-10 text-8xl md:text-9xl text-center translate-y-44 md:tracking-[50px] tracking-widest font-extrabold translate-x-10">
+          <motion.h1 className=" text-shadow font-secondary text-violet-500 z-20 text-8xl md:text-9xl text-center translate-y-44 md:tracking-[50px] tracking-widest font-extrabold translate-x-10">
             AK
           </motion.h1>
           <motion.h1 className=" text-shadow font-secondary text-violet-500 z-20 text-8xl md:text-9xl text-center translate-y-44 md:tracking-[50px] tracking-widest font-extrabold translate-x-10">
             SH
           </motion.h1>
-          <motion.h1 className=" text-shadow font-secondary text-violet-500 z-10 text-8xl md:text-9xl text-center translate-y-44 md:tracking-[50px] tracking-widest font-extrabold translate-x-10">
+          <motion.h1 className=" text-shadow font-secondary text-violet-500 z-20 text-8xl md:text-9xl text-center translate-y-44 md:tracking-[50px] tracking-widest font-extrabold translate-x-10">
             AY
           </motion.h1>
         </motion.div>

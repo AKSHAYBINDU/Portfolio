@@ -64,7 +64,7 @@ const Link = ({ heading, imgSrc, subheading, href }) => {
         initial="initial"
         whileHover="whileHover"
         onClick={() => setIsOpen(true)}
-        className="group z-10 relative flex items-center justify-between border-b-2 border-neutral-700 py-1 sm:py-4 transition-colors duration-500 hover:border-violet-500 md:py-8"
+        className="group z-10 relative flex items-center justify-between border-b-2 border-black dark:border-white border-opacity-70 py-1 sm:py-4 transition-colors duration-500 hover:border-violet-500 dark:hover:border-violet-500 md:py-8"
       >
         <div>
           <motion.span
@@ -77,7 +77,7 @@ const Link = ({ heading, imgSrc, subheading, href }) => {
               staggerChildren: 0.075,
               delayChildren: 0.25,
             }}
-            className="relative z-10 block text-2xl sm:text-4xl font-bold text-black text-opacity-70 dark:text-neutral-500 transition-colors duration-500 group-hover:text-violet-500 md:text-6xl"
+            className="relative z-10 block text-2xl sm:text-4xl font-bold text-black text-opacity-70 dark:text-white transition-colors duration-500 group-hover:text-violet-500 md:text-6xl"
           >
             {heading.split("").map((l, i) => (
               <motion.span
@@ -93,7 +93,7 @@ const Link = ({ heading, imgSrc, subheading, href }) => {
               </motion.span>
             ))}
           </motion.span>
-          <span className="relative z-10 mt-2 block  text-xs sm:text-base text-neutral-500 transition-colors duration-500 group-hover:text-violet-500 ">
+          <span className="relative z-10 mt-2 block  text-xs sm:text-base text-black dark:text-white text-opacity-70 transition-colors duration-500 group-hover:text-violet-500 ">
             {subheading}
           </span>
         </div>

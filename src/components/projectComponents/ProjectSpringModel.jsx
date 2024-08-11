@@ -1,54 +1,57 @@
 import { AnimatePresence, motion } from "framer-motion";
 
 export const ProjectSpringModal = ({ isOpen, setIsOpen }) => {
-    return (
-      <AnimatePresence>
-        {isOpen && (
+  return (
+    <AnimatePresence>
+      {isOpen && (
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          exit={{ opacity: 0 }}
+          onClick={() => setIsOpen(false)}
+          className="bg-slate-900/20 backdrop-blur p-8 fixed inset-0 z-50 grid place-items-center overflow-y-scroll cursor-pointer"
+        >
           <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            exit={{ opacity: 0 }}
-            onClick={() => setIsOpen(false)}
-            className="bg-slate-900/20 backdrop-blur p-8 fixed inset-0 z-50 grid place-items-center overflow-y-scroll cursor-pointer"
+            initial={{ scale: 0, rotate: "12.5deg" }}
+            animate={{ scale: 1, rotate: "0deg" }}
+            exit={{ scale: 0, rotate: "0deg" }}
+            onClick={(e) => e.stopPropagation()}
+            className=" text-white w-11/12  md:w-10/12 h-5/6 shadow-xl cursor-default relative overflow-hidden"
           >
-            <motion.div
-              initial={{ scale: 0, rotate: "12.5deg" }}
-              animate={{ scale: 1, rotate: "0deg" }}
-              exit={{ scale: 0, rotate: "0deg" }}
-              onClick={(e) => e.stopPropagation()}
-              className="bg-gradient-to-br from-violet-600 to-indigo-600 text-white p-6 rounded-lg w-full max-w-lg shadow-xl cursor-default relative overflow-hidden"
-            >
-              {/* <FiAlertCircle className="text-white/10 rotate-12 text-[250px] absolute z-0 -top-24 -left-24" /> */}
-              <div className="relative z-10">
-                <div className="bg-white w-16 h-16 mb-2 rounded-full text-3xl text-indigo-600 grid place-items-center mx-auto">
-                  {/* <FiAlertCircle /> */}
+            <div className=" h-full w-full z-10  rounded-xl md:grid md:grid-flow-col md:grid-cols-3 md:overflow-hidden overflow-y-auto">
+              <div className=" w-full h-5/6 md:h-full flex-shrink-0 dark:bg-neutral-800 bg-white flex flex-col justify-between text-black dark:text-white p-8">
+                <div className=" flex flex-col gap-5">
+                  <h1 className=" font-secondary text-xl md:text-3xl">
+                    Fongard
+                  </h1>
+                  <p>
+                    Developed the Onsitego project, a comprehensive service
+                    management platform that streamlines repair requests and
+                    warranty services, enhancing user experience with efficient
+                    tracking and support features.
+                  </p>
                 </div>
-                <h3 className="text-3xl font-bold text-center mb-2">
-                  One more thing!
-                </h3>
-                <p className="text-center mb-6">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Id
-                  aperiam vitae, sapiente ducimus eveniet in velit.
-                </p>
-                <div className="flex gap-2">
-                  <button
-                    onClick={() => setIsOpen(false)}
-                    className="bg-transparent hover:bg-white/10 transition-colors text-white font-semibold w-full py-2 rounded"
-                  >
-                    Nah, go back
-                  </button>
-                  <button
-                    onClick={() => setIsOpen(false)}
-                    className="bg-white hover:opacity-90 transition-opacity text-indigo-600 font-semibold w-full py-2 rounded"
-                  >
-                    Understood!
-                  </button>
+                <div className=" flex flex-col gap-3">
+                  <p>
+                    <span className=" font-semibold text-opacity-25 text-black dark:text-white">
+                      Year:{" "}
+                    </span>{" "}
+                    2024
+                  </p>
+                  <p>
+                    <span className=" font-semibold text-opacity-25 text-black dark:text-white">
+                      Contribution:{" "}
+                    </span>{" "}
+                    Designed Developed Deployed
+                  </p>
                 </div>
               </div>
-            </motion.div>
+              <div className=" w-full md:h-full h-5/6 flex-shrink-0 bg-violet-300"></div>
+              <div className=" w-full md:h-full h-5/6 flex-shrink-0 dark:bg-neutral-800 bg-white"></div>
+            </div>
           </motion.div>
-        )}
-      </AnimatePresence>
-    );
-  };
-  
+        </motion.div>
+      )}
+    </AnimatePresence>
+  );
+};

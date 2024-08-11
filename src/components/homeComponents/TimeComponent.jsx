@@ -31,7 +31,7 @@ const TimeComponent = () => {
   return (
     <div>
       <p className=" text-black dark:text-white text-xs font-bold font-orbitron tracking-widest">
-        IST {time.hours}:{time.minutes}:{time.seconds} <span className=" text-violet-500 text-xs font-bold tracking-widest orbitron">KERALA</span>
+        IST {time.hours}:{time.minutes} <span className=" text-violet-500 text-xs font-bold tracking-widest orbitron">KERALA</span>
       </p>
     </div>
   );
