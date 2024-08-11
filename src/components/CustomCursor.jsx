@@ -72,7 +72,7 @@ const CustomCursor = () => {
       {circles.map((circle, index) => (
         <div
           key={index}
-          className="circle h-6 w-6 absolute rounded-3xl pointer-events-none bg-black dark:bg-white"
+          className=" circle h-6 w-6 absolute rounded-3xl pointer-events-none bg-black dark:bg-white"
           style={{
             left: `${circle.x - 12}px`,
             top: `${circle.y - 12}px`,

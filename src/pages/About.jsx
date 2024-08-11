@@ -15,10 +15,10 @@ const About = () => {
 
   return (
     <div className=" w-screen h-auto md:min-h-screen relative cursor-none md:overflow-hidden scrollbar-hidden dark:bg-black bg-white">
-      <div className="w-full fixed z-30">
+      <div className="w-full fixed z-30 bg-white dark:bg-black md:bg-transparent md:dark:bg-transparent md:absolute">
         <Navbar />
       </div>
-      <section className=" z-20 w-full md:absolute relative min-h-screen flex justify-center items-center">
+      <section className=" z-20 w-full md:absolute min-h-screen flex justify-center items-center">
         <div className=" flex justify-between text-center md:mx-28 mx-5 my-24 gap-5 overflow-hidden flex-col md:flex-row ">
           <div className=" md:w-1/2 overflow-hidden">
             <div className=" mb-5 dark:text-white text-3xl md:text-5xl lg:text-7xl font-bold font-secondary  overflow-hidden">
@@ -30,7 +30,7 @@ const About = () => {
                 WHO I AM.
               </motion.h1>
             </div>
-            <section className=" pb-5 overflow-hidden ">
+            <section className=" pb-5 overflow-hidden md:mx-6">
               <motion.div className="  overflow-hidden pt-10">
                 <motion.p
                   variants={contactSlideTwo}
@@ -51,10 +51,10 @@ const About = () => {
                   />{" "}
                   for{" "}
                   <span className=" relative pb-1 hover:text-red-500 hover:text-opacity-30 dark:hover:text-red-200 duration-500">
-                    software
+                    Software
                     <div className=" absolute left-0 bottom-0 w-full h-1 bg-red-500 dark:bg-red-200 bg-opacity-30 rounded-full"></div>
                   </span>{" "}
-                  development. I use the{" "}
+                  Development. I use the{" "}
                   <span className=" relative pb-1 hover:text-green-500 hover:text-opacity-30 dark:hover:text-green-200 duration-500">
                     MERN
                     <div className=" absolute left-0 bottom-0 w-full h-1 bg-green-500 dark:bg-green-200 bg-opacity-30 rounded-full"></div>
@@ -120,7 +120,7 @@ const About = () => {
               </motion.h1>
             </div>
 
-            <div className=" h-full ">
+            <div className=" h-full md:mx-6 ">
               <SkillsSet />
             </div>
           </div>

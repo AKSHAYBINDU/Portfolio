@@ -23,7 +23,7 @@ const Contact = () => {
       <div className="w-full z-30 fixed">
         <Navbar />
       </div>
-      <section className=" md:mt-24 absolute z-20 flex flex-col items-start ml-10 md:ml-0 md:grid md:grid-flow-col grid-rows-4 gap-20 md:gap-4 h-screen w-full justify-center">
+      <section className=" md:mt-24 absolute z-20 flex flex-col items-start ml-6 md:ml-0 md:grid md:grid-flow-col grid-rows-4 gap-20 md:gap-4 h-screen w-full justify-center">
         <div className=" border-b border-x-0 border-gray-500 overflow-hidden pb-5">
           <motion.p
             variants={contactSlideTwo}
@@ -31,7 +31,7 @@ const Contact = () => {
             animate="enter"
             className=" text-black dark:text-white text-xs sm:text-base font-secondary  translate-y-2 "
           >
-            Want to{" "}
+            Like to{" "}
             <span className=" text-violet-500 text-xs sm:text-base font-secondary ">
               HIRE ME?
             </span>
@@ -46,7 +46,7 @@ const Contact = () => {
           </motion.h1>
         </div>
         <div className=" border-b border-x-0 border-gray-500 pb-5 overflow-hidden">
-          <div className=" translate-y-1">
+          <div className=" translate-y-0">
             <motion.p
               variants={contactSlideTwo}
               initial="initial"
@@ -68,8 +68,8 @@ const Contact = () => {
             </a>
           </motion.div>
         </div>
-        <div className=" relative border-b border-x-0 border-gray-500 overflow-hidden pb-5">
-          <div className=" translate-y-1">
+        <div className=" relative border-b border-x-0 border-gray-500 pb-5">
+          <div className=" translate-y-0">
             <motion.p
               variants={contactSlideTwo}
               initial="initial"

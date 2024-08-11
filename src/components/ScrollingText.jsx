@@ -12,7 +12,7 @@ const ScrollingText = ({ text }) => {
         {[...Array(100)].map((_, index) => (
           <span
             key={index}
-            className="font-extrabold text-2xl sm:text-5xl font-secondary anton-regular my-1 uppercase text-violet-100 dark:text-white dark:text-opacity-10 mx-4"
+            className="font-extrabold text-2xl sm:text-5xl font-secondary anton-regular my-1 uppercase text-violet-100 dark:text-white dark:text-opacity-10 mx-1 sm:mx-2 md:mx-4"
           >
             {text}
           </span>

@@ -58,7 +58,9 @@ const App = () => {
             <Route path="/contact" element={<Contact />} />
             <Route path="/projects" element={<Projects />} />
           </Routes>
-          <CustomCursor />
+          <div className=" hidden md:block">
+            <CustomCursor />
+          </div>
         </>
       )}
     </AnimatePresence>

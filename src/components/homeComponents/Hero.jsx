@@ -1,6 +1,6 @@
 import { motion, useMotionValue, useSpring, useTransform } from "framer-motion";
 import React, { useRef, useState } from "react";
-import HeroImage from "../../assets/images/HeroImage.jpg";
+import HeroImage from "../../assets/images/HeroImage.png";
 import { useNavigate } from "react-router-dom";
 
 const Hero = () => {
@@ -95,12 +95,12 @@ const Hero = () => {
         style={{ top, left }}
         src={HeroImage}
         layoutId="heroImage-layoutId"
-        className=" absolute z-10  object-cover opacity-90 shadow-2xl shadow-black rounded-md dark:opacity-75 grayscale h-80 w-auto md:h-96 "
+        className=" absolute z-10  object-cover opacity-90 shadow-2xl shadow-black rounded-md dark:opacity-75 grayscale h-80 w-auto md:h-96"
       />
       <motion.img
         style={{ top: topDelayed, left: leftDelayed }}
         src={HeroImage}
-        className="absolute z-20  object-cover overflow-hidden opacity-70 shadow-black rounded-md shadow-2xl dark:opacity-60 grayscale h-80 w-auto md:h-96"
+        className=" absolute z-20  object-cover overflow-hidden opacity-70 shadow-black rounded-md shadow-2xl dark:opacity-60 grayscale h-80 w-auto md:h-96"
       />
       <motion.div
         style={{ top, left }}
@@ -132,13 +132,13 @@ const Hero = () => {
           }}
           className=" flex justify-center items-center text-center "
         >
-          <motion.h1 className=" font-secondary text-violet-500 z-20 text-8xl md:text-9xl text-center translate-y-44 md:tracking-[50px] tracking-widest font-extrabold translate-x-10">
+          <motion.h1 className=" text-shadow font-secondary text-violet-500 z-10 text-8xl md:text-9xl text-center translate-y-44 md:tracking-[50px] tracking-widest font-extrabold translate-x-10">
             AK
           </motion.h1>
-          <motion.h1 className=" font-secondary text-violet-500 z-20 text-8xl md:text-9xl text-center translate-y-44 md:tracking-[50px] tracking-widest font-extrabold translate-x-10">
+          <motion.h1 className=" text-shadow font-secondary text-violet-500 z-20 text-8xl md:text-9xl text-center translate-y-44 md:tracking-[50px] tracking-widest font-extrabold translate-x-10">
             SH
           </motion.h1>
-          <motion.h1 className=" font-secondary text-violet-500 z-20 text-8xl md:text-9xl text-center translate-y-44 md:tracking-[50px] tracking-widest font-extrabold translate-x-10">
+          <motion.h1 className=" text-shadow font-secondary text-violet-500 z-10 text-8xl md:text-9xl text-center translate-y-44 md:tracking-[50px] tracking-widest font-extrabold translate-x-10">
             AY
           </motion.h1>
         </motion.div>
@@ -151,7 +151,7 @@ const Hero = () => {
             ease: [0, 0.71, 0.2, 1.01],
           }}
         >
-          <motion.h1 className=" font-secondary text-[#252525] dark:text-[white] z-20  text-7xl md:text-8xl text-center translate-y-36 md:tracking-[20px] tracking-widest font-bold translate-x-10">
+          <motion.h1 className=" text-shadow font-secondary text-[#252525] dark:text-[white] z-20  text-7xl md:text-8xl text-center translate-y-36 md:tracking-[20px] tracking-widest font-bold translate-x-10">
             kumar
           </motion.h1>
         </motion.div>

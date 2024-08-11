@@ -30,3 +30,19 @@ body {
 .icon:hover .icon-path {
   fill: #8b5cf6; /* Color on hover */
 }
+
+
+::selection {
+  background-color: #bae8e8; /* Change to your desired color */
+  color: #333333; /* Change to your desired text color */
+}
+
+::-moz-selection {
+  background-color: #bae8e8; /* Change to your desired color */
+  color: #333333; /* Change to your desired text color */
+}
+
+.text-shadow {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5)
+}
+

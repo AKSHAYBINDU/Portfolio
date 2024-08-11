@@ -40,7 +40,7 @@ const PreLoader = ({ isVisible,letters }) => {
                 exit="exit"
                 custom={i}
               >
-                <span className=" font-bold text-9xl font-secondary text-white dark:text-black">
+                <span className=" font-bold text-5xl sm:text-9xl font-secondary text-white dark:text-black">
                   {letter}
                 </span>
               </motion.div>

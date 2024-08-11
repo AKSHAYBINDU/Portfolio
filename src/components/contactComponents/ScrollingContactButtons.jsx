@@ -28,7 +28,7 @@ const  ScrollingContactButtons = ({ text, text2, text3 }) => {
 
   return (
     <div
-      className="fixed h-fit w-full  bottom-0 z-20 overflow-hidden dark:bg-black"
+      className="fixed h-fit w-full  bottom-0 z-20 overflow-hidden"
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
@@ -41,19 +41,19 @@ const  ScrollingContactButtons = ({ text, text2, text3 }) => {
           <React.Fragment key={index}>
             <button
               onClick={() => handleContactButton("text1")}
-              className="font-extrabold text-2xl sm:text-5xl font-secondary my-1 uppercase text-black dark:text-white  mx-2 hover:text-violet-500 dark:hover:text-violet-500 duration-500"
+              className="font-extrabold text-2xl sm:text-5xl font-secondary my-1 uppercase text-black dark:text-white  mx-1 md:mx-2 hover:text-violet-500 dark:hover:text-violet-500 duration-500"
             >
               {text}
             </button>
             <button
               onClick={() => handleContactButton("text2")}
-              className="font-extrabold text-2xl sm:text-5xl font-secondary my-1 uppercase text-black dark:text-white mx-2 hover:text-violet-500 dark:hover:text-violet-500 duration-500"
+              className="font-extrabold text-2xl sm:text-5xl font-secondary my-1 uppercase text-black dark:text-white mx-1 md:mx-2 hover:text-violet-500 dark:hover:text-violet-500 duration-500"
             >
               {text2}
             </button>
             <button
               onClick={() => handleContactButton("text3")}
-              className="font-extrabold text-2xl sm:text-5xl font-secondary my-1 uppercase text-black dark:text-white mx-2 hover:text-violet-500 dark:hover:text-violet-500 duration-500"
+              className="font-extrabold text-2xl sm:text-5xl font-secondary my-1 uppercase text-black dark:text-white mx-1 md:mx-2 hover:text-violet-500 dark:hover:text-violet-500 duration-500"
             >
               {text3}
             </button>
