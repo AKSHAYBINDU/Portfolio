@@ -24,7 +24,7 @@ const Contact = () => {
         <Navbar />
       </div>
       <section className=" md:mt-24 absolute z-20 flex flex-col items-start ml-10 md:ml-0 md:grid md:grid-flow-col grid-rows-4 gap-20 md:gap-4 h-screen w-full justify-center">
-        <div className=" border-b border-x-0 border-gray-500 overflow-hidden">
+        <div className=" border-b border-x-0 border-gray-500 overflow-hidden pb-5">
           <motion.p
             variants={contactSlideTwo}
             initial="initial"
@@ -62,13 +62,13 @@ const Contact = () => {
           <motion.div variants={contactSlide} initial="initial" animate="enter">
             <a
               href="mailto:akshaykumarkanad@gmail.com"
-              className=" w-fit text-2xl md:text-5xl lg:text-6xl flex-wrap flex font-extrabold font-alfaslab  text-black dark:text-white hover:text-violet-500 dark:hover:text-violet-500 duration-500"
+              className=" w-fit text-xl md:text-5xl lg:text-6xl flex-wrap flex font-extrabold font-alfaslab  text-black dark:text-white hover:text-violet-500 dark:hover:text-violet-500 duration-500"
             >
               akshaykumarkanad@gmail.com
             </a>
           </motion.div>
         </div>
-        <div className=" relative border-b border-x-0 border-gray-500 overflow-hidden">
+        <div className=" relative border-b border-x-0 border-gray-500 overflow-hidden pb-5">
           <div className=" translate-y-1">
             <motion.p
               variants={contactSlideTwo}
@@ -85,14 +85,14 @@ const Contact = () => {
           <motion.div variants={contactSlide} initial="initial" animate="enter">
             <button
               onClick={copyToClipBoard}
-              className=" text-2xl md:text-5xl lg:text-6xl font-extrabold text-black dark:text-white font-alfaslab tracking-widest hover:text-violet-500 dark:hover:text-violet-500 duration-500 "
+              className=" text-xl md:text-5xl lg:text-6xl font-extrabold text-black dark:text-white font-alfaslab tracking-widest hover:text-violet-500 dark:hover:text-violet-500 duration-500 "
             >
               {phoneNumber}
             </button>
           </motion.div>
 
           {copied && (
-            <div className=" absolute z-20 px-4 py-1 bg-black dark:bg-white bg-opacity-10 dark:bg-opacity-80 rounded-full overflow-hidden text-violet-600 font-normal text-xl">
+            <div className=" absolute z-20 md:px-4 px-2 bg-black dark:bg-white bg-opacity-10 dark:bg-opacity-80 rounded-full overflow-hidden text-violet-600 font-normal text-sm md:text-xl">
               Copied
             </div>
           )}
