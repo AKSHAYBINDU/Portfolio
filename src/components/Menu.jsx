@@ -14,7 +14,9 @@ const Menu = () => {
       className={` fixed inset-0 w-full h-full dark:bg-black bg-white`}
     >
       <div className="p-8 ">
-        <CustomCursor/>
+        <div className=" hidden md:block">
+          <CustomCursor/>
+        </div>
         <RevealLinks/>
       </div>
     </motion.div>

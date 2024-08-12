@@ -1,31 +1,70 @@
 import { useRef, useState } from "react";
 import { useMotionValue, motion, useSpring, useTransform } from "framer-motion";
-import TypeWriter from "../../assets/images/TypeWriter.png";
-import HintImage from "../../assets/images/HintImage.png";
+import iMacFongard from "../../assets/images/iMacFongard.png";
+import iPhoneTwoHint from "../../assets/images/iPhoneTwoHint.png";
+import iPhone from "../../assets/images/iPhone.png";
+import laptopFongard from "../../assets/images/laptopFongard.png";
+import iPhoneFongardTwo from "../../assets/images/iPhoneFongardTwo.png";
+import iPhoneTwoHintTwo from "../../assets/images/iPhoneTwoHintTwo.png";
 import { ProjectSpringModal } from "./ProjectSpringModel";
 
 export const ProjectHoverLinks = () => {
+  const projects = [
+    {
+      heading: "Hint",
+      subheading: "Online dating app 2024.",
+      description:
+        "Tinder is an online dating and geosocial networking application launched in 2012. On Tinder, users 'swipe right' to like or 'swipe left' to dislike other users' profiles, which include their photos, a short bio, and some of their interests.",
+      year: 2023,
+      contributions: ["frontend"],
+      images: [iPhone, iPhoneTwoHint, iPhoneTwoHintTwo],
+      tags: ["React", "Web Development", "JavaScript"],
+      link: "https://github.com/AKSHAYBINDU/Hint",
+      technologies: ["React", "TailwindCSS", "JavaScript", "Figma"],
+      status: "Not Live",
+    },
+    {
+      heading: "Fongard",
+      subheading: "Protection to your Mobile Devices.",
+      description:
+        "Get quick & easy repair and maintenance services for your electronic devices and appliances. Instant repairs, damage protection & AMC plans available.",
+      year: 2024,
+      contributions: ["UI", "frontend", "backend"],
+      images: [laptopFongard, iMacFongard, iPhoneFongardTwo],
+      tags: ["React", "Express", "NodeJs", "JavaScript", "Tailwind", "Phonepe"],
+      link: "",
+      technologies: [
+        "React",
+        "Express",
+        "NodeJs",
+        "JavaScript",
+        "TailwindCSS",
+        "Phonepe",
+        "Firebase",
+      ],
+      status: "Coming Soon",
+    },
+  ];
+
   return (
-    <section className=" ">
+    <section className="">
       <div className="">
-        <Link
-          heading="HINT"
-          subheading="Learn what we do here"
-          imgSrc={HintImage}
-          href="#"
-        />
-        <Link
-          heading="FONGARD"
-          subheading="Your Mobile Protection Partner"
-          imgSrc={TypeWriter}
-          href="#"
-        />
+        {projects.map((project, index) => (
+          <Link
+            key={index}
+            heading={project.heading}
+            subheading={project.subheading}
+            imgSrc={project.images[0]}
+            href={`#${project.heading.replace(" ", "").toLowerCase()}`}
+            projectData={project}
+          />
+        ))}
       </div>
     </section>
   );
 };
 
-const Link = ({ heading, imgSrc, subheading, href }) => {
+const Link = ({ projectData }) => {
   const [isOpen, setIsOpen] = useState(false);
 
   const ref = useRef(null);
@@ -58,7 +97,7 @@ const Link = ({ heading, imgSrc, subheading, href }) => {
   return (
     <>
       <motion.a
-        href={href}
+        href={projectData.href}
         ref={ref}
         onMouseMove={handleMouseMove}
         initial="initial"
@@ -79,7 +118,7 @@ const Link = ({ heading, imgSrc, subheading, href }) => {
             }}
             className="relative z-10 block text-2xl sm:text-4xl font-bold text-black text-opacity-70 dark:text-white transition-colors duration-500 group-hover:text-violet-500 md:text-6xl"
           >
-            {heading.split("").map((l, i) => (
+            {projectData.heading.split("").map((l, i) => (
               <motion.span
                 variants={{
                   initial: { x: 0 },
@@ -94,7 +133,7 @@ const Link = ({ heading, imgSrc, subheading, href }) => {
             ))}
           </motion.span>
           <span className="relative z-10 mt-2 block  text-xs sm:text-base text-black dark:text-white text-opacity-70 transition-colors duration-500 group-hover:text-violet-500 ">
-            {subheading}
+            {projectData.subheading}
           </span>
         </div>
 
@@ -110,9 +149,9 @@ const Link = ({ heading, imgSrc, subheading, href }) => {
             whileHover: { scale: 1 },
           }}
           transition={{ type: "easeOut" }}
-          src={imgSrc}
-          className="absolute h-24 w-32 object-cover md:h-96 md:w-72 rounded-3xl"
-          alt={`Image representing a link for ${heading}`}
+          src={projectData.images[0]}
+          className="absolute h-48 w-fit object-cover md:h-96 md:w-fit rounded-3xl"
+          alt={`Image representing a link for ${projectData.heading}`}
         />
 
         <motion.div
@@ -147,7 +186,11 @@ const Link = ({ heading, imgSrc, subheading, href }) => {
           </svg>
         </motion.div>
       </motion.a>
-      <ProjectSpringModal isOpen={isOpen} setIsOpen={setIsOpen} />
+      <ProjectSpringModal
+        isOpen={isOpen}
+        setIsOpen={setIsOpen}
+        projects={projectData}
+      />
     </>
   );
 };

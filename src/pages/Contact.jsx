@@ -83,7 +83,7 @@ const Contact = () => {
             </motion.p>
           </div>
           {copied && (
-            <div className=" absolute right-0 top-10 z-20 md:px-4 px-2 bg-black dark:bg-white bg-opacity-10 dark:bg-opacity-80 rounded-full overflow-hidden text-violet-600 font-normal text-sm md:text-xl">
+            <div className=" absolute right-0 top-10 z-20 md:px-4 px-2 md:py-1 rounded-full overflow-hidden text-violet-500 border border-violet-500 font-normal text-sm md:text-xl">
               Copied
             </div>
           )}
