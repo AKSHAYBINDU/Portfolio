@@ -1,5 +1,6 @@
 import BackgroundStars from "../components/homeComponents/BackgroundStars";
 import Hero from "../components/homeComponents/Hero";
+import HeroPhone from "../components/homeComponents/HeroPhone";
 import TimeComponent from "../components/homeComponents/TimeComponent";
 import Navbar from "../components/Navbar";
 
@@ -15,6 +16,9 @@ const Home = () => {
       <div className="relative z-10 w-full sm:block hidden">
         <Hero />
       </div>
+      <div className=" absolute z-10 w-full h-screen md:hidden overflow-hidden">
+        <HeroPhone/>
+      </div>
       <div className=" bottom-0 w-full h-fit fixed">
         <div className=" flex justify-between mx-3 md:mx-5">
           <div className=" md:mx-10 mx-4 mb-4 md:mb-10">
@@ -25,7 +29,7 @@ const Home = () => {
               WEB DEVELOPER
             </h1>
           </div>
-          <div className=" md:mx-10 mx-4 mb-4 md:mb-10">
+          <div className=" md:mx-10 mr-4 mb-4 md:mb-10">
             <TimeComponent />
           </div>
         </div>

@@ -8,7 +8,7 @@ const Hero = () => {
 
   const navigate = useNavigate();
 
-  const [showHireMeButton, setShowHireMeButton] = useState(false);
+  const [showAboutMeButton, setShowAboutMeButton] = useState(false);
 
   const x = useMotionValue(0);
   const y = useMotionValue(0);
@@ -74,15 +74,15 @@ const Hero = () => {
   };
 
   const handleMouseEnter = () => {
-    setShowHireMeButton(true);
+    setShowAboutMeButton(true);
   };
 
   const handleMouseLeave = () => {
-    setShowHireMeButton(false);
+    setShowAboutMeButton(false);
   };
 
-  const handleHireMeClick = () => {
-    navigate("/contact");
+  const handleAboutMeClick = () => {
+    navigate("/about");
   };
 
   return (
@@ -93,12 +93,26 @@ const Hero = () => {
     >
       <motion.img
         style={{ top, left }}
+        initial={{ opacity: 0, scale: 0.5 }}
+        animate={{ opacity: 1, scale: 1 }}
+        transition={{
+          duration: 0.8,
+          delay: 0.8,
+          ease: [0, 0.71, 0.2, 1.01],
+        }}
         src={HeroImage}
         layoutId="heroImage-layoutId"
         className=" absolute z-10  object-cover opacity-90 shadow-2xl shadow-black rounded-md dark:opacity-75 grayscale h-80 w-auto md:h-96"
       />
       <motion.img
         style={{ top: topDelayed, left: leftDelayed }}
+        initial={{ opacity: 0, scale: 0.5 }}
+        animate={{ opacity: 1, scale: 1 }}
+        transition={{
+          duration: 0.8,
+          delay: 0.8,
+          ease: [0, 0.71, 0.2, 1.01],
+        }}
         src={HeroImage}
         className=" absolute z-20  object-cover overflow-hidden opacity-70 shadow-black rounded-md shadow-2xl dark:opacity-60 grayscale h-80 w-auto md:h-96"
       />
@@ -107,18 +121,18 @@ const Hero = () => {
         className=" absolute z-50 h-80 w-[290px] md:h-96 max-h-full overflow-hidden items-center rounded-md "
         onMouseEnter={handleMouseEnter}
         onMouseLeave={handleMouseLeave}
-        onClick={handleHireMeClick}
+        onClick={handleAboutMeClick}
       ></motion.div>
-      {showHireMeButton && (
+      {showAboutMeButton && (
         <motion.button
           style={{
             top: buttonYSpring,
             left: buttonXSpring,
             transform: "translate(-50%, -50%)",
           }}
-          className="absolute z-40 px-4 py-1 bg-white bg-opacity-60 rounded-full overflow-hidden text-violet-500 font-semibold"
+          className="absolute z-40 px-3 py-2 uppercase bg-white bg-opacity-60 rounded-full overflow-hidden text-violet-500 font-semibold text-xs"
         >
-          Hire Me
+          About Me
         </motion.button>
       )}
       <motion.div className=" flex flex-col justify-center items-center text-center">
@@ -143,8 +157,8 @@ const Hero = () => {
           </motion.h1>
         </motion.div>
         <motion.div
-          initial={{ opacity: 0, scale: 0.5, translateY: "100%" }}
-          animate={{ opacity: 1, scale: 1, translateY: "0%" }}
+          initial={{ opacity: 0, scale: 0.5, translateY: "200%" }}
+          animate={{ opacity: 1, scale: 1, translateY: 0 }}
           transition={{
             duration: 1,
             delay: 0.5,

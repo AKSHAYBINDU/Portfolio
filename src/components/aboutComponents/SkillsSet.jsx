@@ -144,7 +144,7 @@ const SkillsSet = () => {
           </h2>
         </div>
 
-        <div className=" flex justify-between items-center py-10 mx-16">
+        <div className=" flex justify-between items-center py-10 md:mx-16">
           <MagneticSkillIcons>
             <svg
               className="icon w-10"
@@ -186,8 +186,8 @@ const SkillsSet = () => {
           <MagneticSkillIcons>
             <svg
               className="icon w-10"
-              width="60"
-              height="60"
+              width="32"
+              height="32"
               viewBox="0 0 60 60"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"

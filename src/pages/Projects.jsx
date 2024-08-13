@@ -10,10 +10,10 @@ const Projects = () => {
         <Navbar />
       </div>
       <section className=" md:absolute min-h-screen w-full mt-28">
-        <h1 className=" text-xl md:text-3xl text-black dark:text-white font-bold font-secondary mx-6 md:mx-28">
+        <h1 className=" text-xl md:text-xl text-black dark:text-white font-bold mx-6 md:mx-28">
           Selected Projects
         </h1>
-        <div className=" pt-4 md:pt-10 mx-6 md:mx-28">
+        <div className=" mx-6 md:mx-28">
           <ProjectHoverLinks />
         </div>
       </section>

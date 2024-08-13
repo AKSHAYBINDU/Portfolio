@@ -9,8 +9,8 @@ export default {
     extend: {
       colors: {
         primary: '#8b5cf6',
-        black: '#03001C',
-        white: '#FFFBF5',
+        black: '#040D12',
+        white: '#F4F2EE',
       },
       fontFamily: {
         primary: ['Roboto', 'sans-serif'],

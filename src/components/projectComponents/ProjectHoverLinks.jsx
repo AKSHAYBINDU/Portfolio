@@ -4,7 +4,7 @@ import iMacFongard from "../../assets/images/iMacFongard.png";
 import iPhoneTwoHint from "../../assets/images/iPhoneTwoHint.png";
 import iPhone from "../../assets/images/iPhone.png";
 import laptopFongard from "../../assets/images/laptopFongard.png";
-import iPhoneFongardTwo from "../../assets/images/iPhoneFongardTwo.png";
+import iPhoneTwoFongard from "../../assets/images/iPhoneTwoFongard.png";
 import iPhoneTwoHintTwo from "../../assets/images/iPhoneTwoHintTwo.png";
 import { ProjectSpringModal } from "./ProjectSpringModel";
 
@@ -14,8 +14,9 @@ export const ProjectHoverLinks = () => {
       heading: "Hint",
       subheading: "Online dating app 2024.",
       description:
-        "Tinder is an online dating and geosocial networking application launched in 2012. On Tinder, users 'swipe right' to like or 'swipe left' to dislike other users' profiles, which include their photos, a short bio, and some of their interests.",
+        "Hint is a online dating app that offers a responsive and intuitive experience for connecting with others. Users can create and view profiles, swipe to discover potential matches, and engage in conversations within the app. With its seamless interface and dynamic features like location-based matching and instant messaging, Hint makes finding connections simple.",
       year: 2023,
+      role: "Intern",
       contributions: ["frontend"],
       images: [iPhone, iPhoneTwoHint, iPhoneTwoHintTwo],
       tags: ["React", "Web Development", "JavaScript"],
@@ -26,12 +27,20 @@ export const ProjectHoverLinks = () => {
     {
       heading: "Fongard",
       subheading: "Protection to your Mobile Devices.",
-      description:
-        "Get quick & easy repair and maintenance services for your electronic devices and appliances. Instant repairs, damage protection & AMC plans available.",
+      description: " Fongard is a user-centric, responsive app designed to simplify the purchase of mobile device protection plans. It offers secure transactions and robust authentication, ensuring users can confidently customize and buy plans. The app's intuitive design adapts seamlessly to both mobile and desktop, making device protection effortless and accessible.",
       year: 2024,
+      role: "Freelance",
       contributions: ["UI", "frontend", "backend"],
-      images: [laptopFongard, iMacFongard, iPhoneFongardTwo],
-      tags: ["React", "Express", "NodeJs", "JavaScript", "Tailwind", "Phonepe"],
+      images: [laptopFongard, iMacFongard, iPhoneTwoFongard],
+      tags: [
+        "React",
+        "Express",
+        "NodeJs",
+        "JavaScript",
+        "Tailwind",
+        "Phonepe",
+        "figma",
+      ],
       link: "",
       technologies: [
         "React",
@@ -41,6 +50,7 @@ export const ProjectHoverLinks = () => {
         "TailwindCSS",
         "Phonepe",
         "Firebase",
+        "figma",
       ],
       status: "Coming Soon",
     },
@@ -116,7 +126,7 @@ const Link = ({ projectData }) => {
               staggerChildren: 0.075,
               delayChildren: 0.25,
             }}
-            className="relative z-10 block text-2xl sm:text-4xl font-bold text-black text-opacity-70 dark:text-white transition-colors duration-500 group-hover:text-violet-500 md:text-6xl"
+            className="relative z-10 block text-2xl sm:text-4xl font-bold text-black dark:text-white transition-colors duration-500 group-hover:text-violet-500 md:text-6xl"
           >
             {projectData.heading.split("").map((l, i) => (
               <motion.span

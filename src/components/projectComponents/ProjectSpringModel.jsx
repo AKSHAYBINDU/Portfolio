@@ -19,9 +19,9 @@ export const ProjectSpringModal = ({ isOpen, setIsOpen, projects }) => {
   }, [sliderImages.length]);
 
   const variants = {
-    enter: { x: '100%', opacity: 0,scale: 0 },
-    center: { x: 0, opacity: 1 ,scale: 1},
-    exit: { x: '-100%', opacity: 0 ,scale: 0},
+    enter: { x: "100%", opacity: 0, scale: 0 },
+    center: { x: 0, opacity: 1, scale: 1 },
+    exit: { x: "-100%", opacity: 0, scale: 0 },
   };
 
   return (
@@ -50,7 +50,13 @@ export const ProjectSpringModal = ({ isOpen, setIsOpen, projects }) => {
                   <p>{projects.description}</p>
                 </div>
                 <div className="flex flex-col gap-3">
-                  <p className=" font-semibold">
+                  <p className=" font-medium">
+                    <span className="font-semibold text-opacity-25 text-black dark:text-white dark:text-opacity-50">
+                      Role:{" "}
+                    </span>
+                    {projects.role}
+                  </p>
+                  <p className=" font-medium">
                     <span className="font-semibold text-opacity-25 text-black dark:text-white dark:text-opacity-50">
                       Year:{" "}
                     </span>
@@ -61,7 +67,7 @@ export const ProjectSpringModal = ({ isOpen, setIsOpen, projects }) => {
                       Contribution:{" "}
                     </span>
                     {projects.contributions.map((contribution, index) => (
-                      <span className=" font-semibold " key={index}>
+                      <span className=" font-medium uppercase" key={index}>
                         {contribution}{" "}
                         {index < projects.contributions.length - 1 && " , "}
                       </span>
@@ -69,11 +75,11 @@ export const ProjectSpringModal = ({ isOpen, setIsOpen, projects }) => {
                   </p>
                 </div>
               </div>
-                <div
-                  key="model"
-                  className="w-full md:h-full h-5/6 flex-shrink-0 overflow-hidden bg-violet-300 flex justify-center items-center"
-                >
-              <AnimatePresence mode="wait" initial={false}>
+              <div
+                key="model"
+                className="w-full md:h-full h-5/6 flex-shrink-0 overflow-hidden bg-violet-300 flex justify-center items-center"
+              >
+                <AnimatePresence mode="wait" initial={false}>
                   <motion.img
                     key={currentImageIndex}
                     src={sliderImages[currentImageIndex]}
@@ -82,11 +88,11 @@ export const ProjectSpringModal = ({ isOpen, setIsOpen, projects }) => {
                     initial="enter"
                     animate="center"
                     exit="exit"
-                    transition={{ duration: 0.3 , ease: 'easeInOut'}}
+                    transition={{ duration: 0.3, ease: "easeInOut" }}
                     className="w-full h-full object-contain duration-500"
                   />
-              </AnimatePresence>
-                </div>
+                </AnimatePresence>
+              </div>
 
               <div className="w-full md:h-full h-5/6 flex-shrink-0 dark:bg-neutral-800 bg-white flex flex-col justify-between text-black dark:text-white p-8">
                 <div className="flex flex-col gap-5">
