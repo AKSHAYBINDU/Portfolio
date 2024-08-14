@@ -16,7 +16,7 @@ const HeroPhone = () => {
   };
 
   return (
-    <motion.div className=" relative w-screen h-screen flex justify-center items-center overflow-hidden">
+    <motion.div className="  relative w-screen h-screen flex justify-center items-center overflow-hidden">
       <motion.div
         initial={{ opacity: 0, y: "-200%" }}
         animate={{ opacity: 1, y: 0 }}
@@ -46,7 +46,7 @@ const HeroPhone = () => {
           }}
           src={HeroImage}
           onClick={handleHireMeClick}
-          className=" absolute z-20  object-cover overflow-hidden shadow-black rounded-2xl border border-violet-500 shadow-2xl dark:opacity-60 grayscale h-auto w-auto "
+          className=" absolute z-20  object-cover overflow-hidden shadow-black rounded-2xl border border-violet-500 shadow-2xl dark:opacity-60 grayscale h-auto min-w-56 w-auto"
         />
         {/* 
         <motion.button
@@ -60,7 +60,7 @@ const HeroPhone = () => {
         >
           About Me
         </motion.button> */}
-        <div className=" w-full h-full">
+        <div className=" w-full h-full z-40 sm:z-0">
           <motion.div className=" absolute top-52  rotate-90 left-0">
             <motion.div
               initial={{ opacity: 0, scale: 0.5, y: "200%" }}

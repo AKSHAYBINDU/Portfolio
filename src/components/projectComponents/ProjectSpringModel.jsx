@@ -42,7 +42,7 @@ export const ProjectSpringModal = ({ isOpen, setIsOpen, projects }) => {
             className=" text-white w-11/12  md:w-10/12 h-5/6 shadow-xl cursor-default relative overflow-hidden"
           >
             <div className="h-full w-full z-10 rounded-xl md:grid md:grid-flow-col md:grid-cols-3 md:overflow-hidden overflow-y-auto">
-              <div className="w-full h-5/6 md:h-full flex-shrink-0 dark:bg-neutral-800 bg-white flex flex-col justify-between text-black dark:text-white p-8">
+              <div className="w-full h-full md:h-full flex-shrink-0 dark:bg-neutral-800 bg-white flex flex-col justify-between text-black dark:text-white p-4">
                 <div className="flex flex-col gap-5">
                   <h1 className="font-secondary text-xl md:text-3xl">
                     {projects.heading}
