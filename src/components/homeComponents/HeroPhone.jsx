@@ -60,7 +60,7 @@ const HeroPhone = () => {
         >
           About Me
         </motion.button> */}
-        <div className=" w-full h-full z-40 sm:z-0">
+        <div className=" w-full h-full">
           <motion.div className=" absolute top-52  rotate-90 left-0">
             <motion.div
               initial={{ opacity: 0, scale: 0.5, y: "200%" }}
