@@ -18,6 +18,7 @@ export default {
         bodoni: ['"Libre Bodoni"', 'serif'],
         orbitron: [ "Orbitron", 'serif'],
         alfaslab: [ "Alfa Slab One", 'serif'],
+        righteous: [ "Righteous", 'serif'],
       },
       screens: {
         sm: '640px',

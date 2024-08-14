@@ -47,7 +47,7 @@ const Navbar = () => {
     <div className=" relative w-full h-fit cursor-none ">
       <div className=" px-4 md:px-10 py-5 flex justify-between items-center text-center">
         <div className=" z-0">
-          <Link to="/" className=" pr-4 pl-2 text-black dark:text-white tracking-[-9px] text-4xl font-bold hover:text-violet-500 dark:hover:text-violet-500 duration-700">
+          <Link to="/" className=" font-righteous pr-4 pl-2 text-black dark:text-white text-4xl font-bold hover:text-violet-500 dark:hover:text-violet-500 duration-700">
             ak
           </Link>
         </div>
