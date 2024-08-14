@@ -77,7 +77,7 @@ export const ProjectSpringModal = ({ isOpen, setIsOpen, projects }) => {
               </div>
               <div
                 key="model"
-                className="w-full md:h-full h-5/6 flex-shrink-0 overflow-hidden bg-violet-300 flex justify-center items-center"
+                className="w-full md:h-full h-full flex-shrink-0 overflow-hidden bg-violet-300 flex justify-center items-center"
               >
                 <AnimatePresence mode="wait" initial={false}>
                   <motion.img
