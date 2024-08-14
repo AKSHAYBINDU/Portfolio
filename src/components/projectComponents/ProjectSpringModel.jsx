@@ -94,7 +94,7 @@ export const ProjectSpringModal = ({ isOpen, setIsOpen, projects }) => {
                 </AnimatePresence>
               </div>
 
-              <div className="w-full md:h-full h-5/6 flex-shrink-0 dark:bg-neutral-800 bg-white flex flex-col justify-between text-black dark:text-white p-8">
+              <div className="w-full md:h-full h-full flex-shrink-0 dark:bg-neutral-800 bg-white flex flex-col justify-between text-black dark:text-white p-8">
                 <div className="flex flex-col gap-5">
                   <h1 className="font-secondary text-base">
                     Technologies Used:
