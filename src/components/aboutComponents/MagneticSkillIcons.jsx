@@ -29,7 +29,7 @@ export default function MagneticSkillIcons({ children }) {
       ref={ref}
       onMouseMove={mouseMove}
       onMouseLeave={mouseLeave}
-      className=" block overflow-hidden "
+      className=" block overflow-hidden"
     >
       <motion.div
         variants={contactSlideTwo}
