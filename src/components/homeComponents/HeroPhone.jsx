@@ -46,7 +46,7 @@ const HeroPhone = () => {
           }}
           src={HeroImage}
           onClick={handleHireMeClick}
-          className=" absolute z-20  object-cover overflow-hidden shadow-black rounded-2xl border border-violet-500 shadow-2xl dark:opacity-60 grayscale h-auto min-w-56 w-auto"
+          className=" absolute z-20  object-cover overflow-hidden shadow-black rounded-2xl border border-violet-500 shadow-2xl dark:opacity-60 grayscale h-auto w-4/6 "
         />
         {/* 
         <motion.button
