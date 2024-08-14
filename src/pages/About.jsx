@@ -19,7 +19,7 @@ const About = () => {
         <Navbar />
       </div>
       <section className=" z-20 w-full md:absolute min-h-screen flex justify-center items-center">
-        <div className=" flex justify-between text-center md:mx-28 mx-5 my-24 gap-5 overflow-hidden flex-col md:flex-row">
+        <div className=" flex justify-between text-center md:mx-28 mx-2 my-24 gap-5 overflow-hidden flex-col md:flex-row">
           <div className=" md:w-1/2 overflow-hidden">
             <div className=" mb-5 dark:text-white text-black text-3xl md:text-5xl lg:text-7xl font-bold font-secondary  overflow-hidden">
               <motion.h1
