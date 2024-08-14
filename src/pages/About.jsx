@@ -36,7 +36,7 @@ const About = () => {
                   variants={contactSlideTwo}
                   initial="initial"
                   animate="enter"
-                  className=" px-8 pb-4 dark:text-white text-[#1e1e1e] text-opacity-80 dark:text-opacity-90 font-normal text-start text-base "
+                  className=" px-4 pb-4 dark:text-white text-[#1e1e1e] text-opacity-80 dark:text-opacity-90 font-normal text-start text-base "
                 >
                   Hi, I'm{" "}
                   <span className=" italic font-bodoni font-extrabold text-xl">
@@ -85,7 +85,7 @@ const About = () => {
                   variants={contactSlideTwo}
                   initial="initial"
                   animate="enter"
-                  className="px-8 dark:text-white text-[#1e1e1e] font-normal text-opacity-80 dark:text-opacity-90 text-start text-base "
+                  className="px-4 dark:text-white text-[#1e1e1e] font-normal text-opacity-80 dark:text-opacity-90 text-start text-base "
                 >
                   Currently looking for a full time job in front-end or
                   full-stack development, I am motivated by the opportunity to
