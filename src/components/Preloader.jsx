@@ -29,7 +29,7 @@ const PreLoader = ({ isVisible,letters }) => {
     <>
       {isVisible && (
         <motion.div className=" w-screen h-screen overflow-hidden fixed inset-0 duration-500 bg-white dark:bg-black text-center cursor-none">
-          <div className=" w-full h-full grid grid-cols-7 gap-1 grid-rows-1">
+          <div className=" w-full h-full grid grid-cols-7 gap-1  grid-rows-1">
             {letters.map((letter, i) => (
               <motion.div
                 key={i}

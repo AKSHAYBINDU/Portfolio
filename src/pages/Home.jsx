@@ -10,14 +10,15 @@ const Home = () => {
       <div className=" absolute -z-50">
         <BackgroundStars />
       </div>
+     
       <div className="w-full z-30 fixed">
         <Navbar />
       </div>
-      <div className="relative z-10 w-full sm:block hidden">
+      <div className=" absolute z-10 w-full md:block hidden">
         <Hero />
       </div>
       <div className=" absolute z-10 w-full h-screen md:hidden overflow-hidden">
-        <HeroPhone/>
+        <HeroPhone />
       </div>
       <div className=" bottom-0 w-full h-fit fixed">
         <div className=" flex justify-between mx-3 md:mx-5">

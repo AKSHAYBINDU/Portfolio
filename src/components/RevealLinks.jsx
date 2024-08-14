@@ -16,12 +16,16 @@ const DURATION = 0.25;
 const STAGGER = 0.055;
 
 const FlipLink = ({ children, href }) => {
+  const isActive = window.location.pathname === href;
+
   return (
     <motion.a
       initial="initial"
       whileHover="hovered"
       href={href}
-      className="relative block overflow-hidden whitespace-nowrap font-black uppercase text-5xl sm:text-7xl md:text-8xl lg:text-9xl cursor-none"
+      className={` relative block overflow-hidden whitespace-nowrap font-black uppercase text-5xl sm:text-7xl md:text-8xl lg:text-9xl cursor-none  ${
+        isActive ? " text-violet-500 dark:text-violet-500" : " text-black dark:text-white"
+      }`}
       style={{
         lineHeight: 0.85,
       }}
@@ -49,7 +53,11 @@ const FlipLink = ({ children, href }) => {
           </motion.span>
         ))}
       </div>
-      <div className="absolute inset-0 text-violet-500 dark:text-violet-500">
+      <div
+        className={`absolute inset-0 ${
+          isActive ? "" : "text-violet-500 dark:text-violet-500"
+        }`}
+      >
         {children.split("").map((l, i) => (
           <motion.span
             variants={{
@@ -75,5 +83,3 @@ const FlipLink = ({ children, href }) => {
     </motion.a>
   );
 };
-
-

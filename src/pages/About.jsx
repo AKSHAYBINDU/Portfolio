@@ -3,7 +3,7 @@ import { contactSlide, contactSlideTwo } from "../utils/animations/anime";
 import { motion } from "framer-motion";
 import loveSvg from "../assets/icons/loveSvg.svg";
 import { Link } from "react-router-dom";
-import resumePdf from "../assets/pdf/akshaykumar_resume.pdf";
+import resumePdf from "../assets/pdf/akshaykumark_resume.pdf";
 import SkillsSet from "../components/aboutComponents/SkillsSet";
 import ScrollingText from "../components/ScrollingText";
 import Navbar from "../components/Navbar";
@@ -95,7 +95,7 @@ const About = () => {
                 </motion.p>
               </motion.div>
               <div className=" flex justify-between items-center gap-8 py-5 ml-8 flex-wrap">
-                <Link
+                {/* <Link
                   to="/projects"
                   className=" text-sm hover:text-violet-500 bg-[#818181] text-white hover:bg-[#e8e8e8] dark:bg-[#1d1d1d] dark:hover:bg-[#3e3e3e] dark:hover:text-white dark:text-violet-500 rounded-full px-7 py-3 duration-700 "
                 >
@@ -106,7 +106,7 @@ const About = () => {
                   className=" text-sm hover:text-violet-500 bg-[#818181] text-white hover:bg-[#e8e8e8] dark:bg-[#1d1d1d] dark:hover:bg-[#3e3e3e] dark:hover:text-white dark:text-violet-500 rounded-full px-7 py-3 duration-700 "
                 >
                   CONTACT
-                </Link>
+                </Link> */}
 
                 <button
                   onClick={openResume}

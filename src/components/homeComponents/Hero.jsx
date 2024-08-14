@@ -91,6 +91,23 @@ const Hero = () => {
       onMouseMove={handleMouseMove}
       className=" relative w-full h-screen flex justify-center items-center"
     >
+      <motion.div
+        initial={{ opacity: 0, y: "-200%" }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{
+          duration: 1,
+          delay: 0.2,
+          ease: [0, 0.71, 0.2, 1.01],
+        }}
+        className=" hidden lg:grid lg:grid-cols-12 h-screen absolute w-full"
+      >
+        {Array.from({ length: 12 }).map((_, index) => (
+          <div
+            key={index}
+            className="border border-black border-opacity-10 p-4 text-center"
+          ></div>
+        ))}
+      </motion.div>
       <motion.img
         style={{ top, left }}
         initial={{ opacity: 0, scale: 0.5 }}
@@ -101,10 +118,10 @@ const Hero = () => {
           ease: [0, 0.71, 0.2, 1.01],
         }}
         src={HeroImage}
-        layoutId="heroImage-layoutId"
-        className=" absolute z-10  object-cover opacity-90 shadow-2xl shadow-black rounded-md dark:opacity-75 grayscale h-80 w-auto md:h-96"
+        // layoutId="heroImage-layoutId"
+        className=" absolute z-10  object-cover border border-violet-500 shadow-2xl shadow-black rounded-2xl dark:opacity-75 grayscale h-80 w-auto md:h-96"
       />
-      <motion.img
+      {/* <motion.img
         style={{ top: topDelayed, left: leftDelayed }}
         initial={{ opacity: 0, scale: 0.5 }}
         animate={{ opacity: 1, scale: 1 }}
@@ -114,11 +131,11 @@ const Hero = () => {
           ease: [0, 0.71, 0.2, 1.01],
         }}
         src={HeroImage}
-        className=" absolute z-20  object-cover overflow-hidden opacity-70 shadow-black rounded-md shadow-2xl dark:opacity-60 grayscale h-80 w-auto md:h-96"
-      />
+        className=" absolute z-20  object-cover opacity-70 shadow-black rounded-2xl shadow-2xl dark:opacity-60 grayscale h-80 w-auto md:h-96"
+      /> */}
       <motion.div
         style={{ top, left }}
-        className=" absolute z-50 h-80 w-[290px] md:h-96 max-h-full overflow-hidden items-center rounded-md "
+        className=" absolute z-50 h-80 w-[290px] md:h-96 max-h-full overflow-hidden items-center rounded-2xl "
         onMouseEnter={handleMouseEnter}
         onMouseLeave={handleMouseLeave}
         onClick={handleAboutMeClick}

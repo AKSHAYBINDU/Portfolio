@@ -84,7 +84,7 @@ const Navbar = () => {
                   />
                 </motion.button>
               ) : (
-                <div className=" "> |||</div>
+                <div className=" -translate-x-2"> |||</div>
               )}
             </motion.div>
           </AnimatePresence>
