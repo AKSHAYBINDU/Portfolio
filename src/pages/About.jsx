@@ -94,7 +94,7 @@ const About = () => {
                   discuss opportunities.
                 </motion.p>
               </motion.div>
-              <div className=" flex justify-between items-center gap-8 py-5 ml-8 flex-wrap">
+              <div className=" flex justify-start items-center gap-8 p-4 flex-wrap">
                 {/* <Link
                   to="/projects"
                   className=" text-sm hover:text-violet-500 bg-[#818181] text-white hover:bg-[#e8e8e8] dark:bg-[#1d1d1d] dark:hover:bg-[#3e3e3e] dark:hover:text-white dark:text-violet-500 rounded-full px-7 py-3 duration-700 "
