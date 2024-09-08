@@ -3,7 +3,7 @@ import { contactSlide, contactSlideTwo } from "../utils/animations/anime";
 import { motion } from "framer-motion";
 import loveSvg from "../assets/icons/loveSvg.svg";
 import { Link } from "react-router-dom";
-import resumePdf from "../assets/pdf/akshaykumark_resume.pdf";
+import resumePdf from "../assets/pdf/myResume.pdf";
 import SkillsSet from "../components/aboutComponents/SkillsSet";
 import ScrollingText from "../components/ScrollingText";
 import Navbar from "../components/Navbar";
