@@ -29,7 +29,7 @@ const App = () => {
   const getLettersForPath = (path) => {
     switch (path) {
       case "/":
-        return "NAMASTE".split("");
+        return "WELCOME".split("");
       case "/about":
         return "ABOUTME".split("");
       case "/contact":
@@ -37,7 +37,7 @@ const App = () => {
       case "/projects":
         return "PROJECT".split("");
       default:
-        return "NAMASTE".split("");
+        return "WELCOME".split("");
     }
   };
 
