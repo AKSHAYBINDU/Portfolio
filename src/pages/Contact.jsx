@@ -10,7 +10,7 @@ import ScrollingContactButtons from "../components/contactComponents/ScrollingCo
 
 const Contact = () => {
   const [copied, setCopied] = useState(false);
-  const phoneNumber = "+91-6282251370";
+  const phoneNumber = "+91-8075192726";
 
   const copyToClipBoard = () => {
     navigator.clipboard.writeText(phoneNumber).then(() => {
